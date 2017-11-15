@@ -81,6 +81,9 @@ video {
           -ms-transform: scaleY(1.05);
               transform: scaleY(1.05); }
 
+.italic {
+  font-family: overwatch-italic; }
+
 .menus > * {
   position: relative;
   left: 0;
@@ -126,7 +129,8 @@ video {
   margin-left: 6px;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  width: 300px; }
   .username img {
     width: 57px;
     height: 60px;
@@ -134,15 +138,39 @@ video {
   .username .playername {
     color: rgba(255, 255, 255, 0.9);
     margin-left: 14px;
-    font-size: 18px;
-    font-family: Arial; }
+    font-size: 25px; }
   .username .level {
     color: #fff;
     background: #a56a54;
     padding: 0 6px 2px 6px;
-    margin-left: 6px;
+    margin-left: 10px;
     margin-right: 57px;
-    margin-bottom: 8px;
+    margin-bottom: 3px;
     border-radius: 3px;
     font-size: 13px;
     font-family: overwatch; }
+
+.hero {
+  position: fixed;
+  bottom: 21%;
+  right: 53px;
+  text-align: right;
+  color: #FFF; }
+  .hero #heroName {
+    font-size: 86px;
+    line-height: 1;
+    background: -webkit-linear-gradient(#FFF, #adb2b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-right: 15px; }
+  .hero #heroUnlocks {
+    line-height: 1;
+    font-family: overwatch;
+    font-size: 24px;
+    color: #e3f2ff;
+    text-shadow: 0 0 2px #336cec;
+    -webkit-transform-origin: bottom;
+        -ms-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transition: all .05s ease-in;
+    transition: all .05s ease-in; }
