@@ -11,6 +11,14 @@ html, body {
   -webkit-user-select: none;
   user-select: none; }
 
+@font-face {
+  font-family: overwatch;
+  src: url(https://us.battle.net/forums/static/fonts/f014015d/f014015d.woff); }
+
+@font-face {
+  font-family: overwatch-italic;
+  src: url(https://us.battle.net/forums/static/fonts/bignoodletoo/bignoodletoo.woff); }
+
 video {
   position: fixed;
   top: 50%;
@@ -25,3 +33,116 @@ video {
   transform: translateX(-50%) translateY(-50%);
   background: #000;
   background-size: cover; }
+
+.left {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 500px;
+  height: 100%; }
+
+#menu-highlight {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.menus {
+  position: relative;
+  height: 500px;
+  margin-top: 50px;
+  padding-left: 35px; }
+  .menus .italic {
+    position: relative;
+    left: 0;
+    font-family: overwatch-italic;
+    font-size: 63px;
+    color: #fff;
+    text-shadow: 0px 0px 3px #cecece;
+    -webkit-transform-origin: bottom;
+        -ms-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transition: all .05s ease-in;
+    transition: all .05s ease-in;
+    line-height: 1.2; }
+    .menus .italic .highlight {
+      color: #f3c026;
+      text-shadow: 0px 0px 5px #bb7e29; }
+    .menus .italic:hover {
+      left: 20px;
+      -webkit-transform: scaleY(1.05);
+          -ms-transform: scaleY(1.05);
+              transform: scaleY(1.05); }
+
+.menus > * {
+  position: relative;
+  left: 0;
+  line-height: 1.7;
+  font-family: overwatch;
+  font-size: 24px;
+  color: #e3f2ff;
+  text-shadow: 0 0 2px #336cec;
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: all .05s ease-in;
+  transition: all .05s ease-in; }
+  .menus > *:hover {
+    left: 6px;
+    -webkit-transform: scaleY(1.1);
+        -ms-transform: scaleY(1.1);
+            transform: scaleY(1.1);
+    color: #fff; }
+
+.logo {
+  position: relative;
+  padding: 7px 0 0 30px;
+  opacity: 0.9;
+  color: #FFF; }
+  .logo img {
+    width: 390px; }
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  position: fixed;
+  right: 25px;
+  top: 25px; }
+
+.username {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+  margin-left: 6px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .username img {
+    width: 57px;
+    height: 60px;
+    border-left: 5px solid #b1fb23; }
+  .username .playername {
+    color: rgba(255, 255, 255, 0.9);
+    margin-left: 14px;
+    font-size: 18px;
+    font-family: Arial; }
+  .username .level {
+    color: #fff;
+    background: #a56a54;
+    padding: 0 6px 2px 6px;
+    margin-left: 6px;
+    margin-right: 57px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-family: overwatch; }
